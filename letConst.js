@@ -112,37 +112,72 @@
 //     }
 // }
 
-8
-1846
+// DESTRUCTURING
 
-yearNeptuneDiscovered: 1846, yearMarsDiscovered: 1659
+// 8
+// 1846
 
-Your name is Alejandro and you like purple
-Your name is Melissa and you like green
-Your name is undefined and you like green
+// yearNeptuneDiscovered: 1846, yearMarsDiscovered: 1659
 
-Maya
-Marisa
-Chi
+// Your name is Alejandro and you like purple
+// Your name is Melissa and you like green
+// Your name is undefined and you like green
 
-"raindrops on roses"
-"whiskers on kittens"
-["Bright copper kettles",
-"warm woolen mittens",
-    "Brown paper packages tied up with strings"];
+// Maya
+// Marisa
+// Chi
 
-10, 30, 20
+// "raindrops on roses"
+// "whiskers on kittens"
+// ["Bright copper kettles",
+// "warm woolen mittens",
+//     "Brown paper packages tied up with strings"];
 
-const obj = {
-    numbers: {
-        a: 1,
-        b: 2
+// 10, 30, 20
+
+// const obj = {
+//     numbers: {
+//         a: 1,
+//         b: 2
+//     }
+// };
+
+// const { a, b } = obj.numbers
+
+// [arr[0], arr[1]] = [arr[1], arr[0]]
+
+// raceResults(["Corn", "Mary", "Kay", "Marcie"])
+// const raceResults([first, second, third, ...rest]) => ({ first, second, third, rest })
+
+MAPS AND SETS
+[1, 2, 3, 4]
+
+"ref"
+
+0: { Array(3) => true }
+1: { Array(3) => false }
+
+const hasDuplicate = arr => new Set(arr).size !== arr.length
+
+
+vowelCount('awesome') // Map { 'a' => 1, 'e' => 2, 'o' => 1 }
+vowelCount('Colt') // Map { 'o' => 1 }
+
+function isVowel(char) {
+    return "aeiou".includes(char);
+}
+
+function vowelCount(str) {
+    const vowelMap = new Map();
+    for (let char of str) {
+        let lowerCaseChar = char.toLowerCase()
+        if (isVowel(lowerCaseChar)) {
+            if (vowelMap.has(lowerCaseChar)) {
+                vowelMap.set(lowerCaseChar, vowelMap.get(lowerCaseChar) + 1);
+            } else {
+                vowelMap.set(lowerCaseChar, 1);
+            }
+        }
     }
-};
-
-const { a, b } = obj.numbers
-
-[arr[0], arr[1]] = [arr[1], arr[0]]
-
-raceResults(["Corn", "Mary", "Kay", "Marcie"])
-const raceResults([first, second, third, ...rest]) => ({ first, second, third, rest })
+    return vowelMap;
+}
