@@ -1,0 +1,16 @@
+Hyper Text Transfer Protocol
+web address 
+domain name system make web address easier for people to remember
+key value pair tacked to the end of the url
+get- gets data from server
+post- sends and changes data in a server
+a request is usually made my someone trying to access a particular resource from that server
+the response is sending requester the resource they asked for
+give added information to the request 
+host, user-agent, cookie
+content-type, last modified 
+1. Your browser “resolves” the name into an IP address using DNS
+2. Your browser makes a request to that IP address, including headers (info about browser, any previous cookies, and other things)
+3. The server sends a response (typically, HTML, with a status code (200 if it was sucessful)
+4. The browser makes a DOM from that HTML, and finds any other resources needed (images, CSS, JavaScript, etc)
+5. The browser makes separate HTTP requests for those resources and receives response from the server for each
