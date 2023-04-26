@@ -1,0 +1,31 @@
+O(n)
+O(n)
+O(1)
+O(n^3)
+O(n)
+O(n)
+O(n log n)
+O(n^2)
+O(1)
+O(n^2)
+
+O(n)
+O(n)
+o(1)
+O(n)
+O(n^2)
+O(n)
+
+true
+true
+false
+O(n)
+O(n)
+O(n)
+O(n log n)
+O(n)
+O(1)
+O(n)
+O(1)
+O(n)
+O(n)
